@@ -256,7 +256,25 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertEquals("coe","coe");
         Assertions.assertEquals("cod", "cod");
         Assertions.assertEquals("chocolat","chocolat");
-
+    }
+//    frontBack("code") → "eodc"	"eodc"	OK
+//    frontBack("a") → "a"	"a"	OK
+//    frontBack("ab") → "ba"	"ba"	OK
+//    frontBack("abc") → "cba"	"cba"	OK
+//    frontBack("") → ""	""	OK
+//    frontBack("Chocolate") → "ehocolatC"	"ehocolatC"	OK
+//    frontBack("aavJ") → "Java"	"Java"	OK
+//    frontBack("hello") → "oellh"	"oellh"	OK
+    @Test
+    void  frontBack(){
+        Assertions.assertEquals("eodc", "eodc");
+        Assertions.assertEquals("a","a");
+        Assertions.assertEquals("ab","ab");
+        Assertions.assertEquals("cba","cba");
+        Assertions.assertEquals("","");
+        Assertions.assertEquals("ehocolatC","ehocolatC");
+        Assertions.assertEquals("Java","Java");
+        Assertions.assertEquals("oellh","oellh");
     }
 
 }
