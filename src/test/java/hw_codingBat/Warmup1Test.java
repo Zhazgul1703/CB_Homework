@@ -233,6 +233,29 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertEquals("not","not");
         Assertions.assertEquals("is not","is not");
        Assertions.assertEquals("is not", "is not");
+    }
+//    missingChar("kitten", 1) → "ktten"	"ktten"	OK
+//    missingChar("kitten", 0) → "itten"	"itten"	OK
+//    missingChar("kitten", 4) → "kittn"	"kittn"	OK
+//    missingChar("Hi", 0) → "i"	"i"	OK
+//    missingChar("Hi", 1) → "H"	"H"	OK
+//    missingChar("code", 0) → "ode"	"ode"	OK
+//    missingChar("code", 1) → "cde"	"cde"	OK
+//    missingChar("code", 2) → "coe"	"coe"	OK
+//    missingChar("code", 3) → "cod"	"cod"	OK
+//    missingChar("chocolate", 8) → "chocolat"	"chocolat"	O
+    @Test
+    void  missingChar(){
+        Assertions.assertEquals("ktten","ktten");
+        Assertions.assertEquals("itten", "itten");
+        Assertions.assertEquals("kittn","kittn");
+        Assertions.assertEquals("i", "i");
+        Assertions.assertEquals("h","h");
+        Assertions.assertEquals("ode", "ode");
+        Assertions.assertEquals("cde", "cde");
+        Assertions.assertEquals("coe","coe");
+        Assertions.assertEquals("cod", "cod");
+        Assertions.assertEquals("chocolat","chocolat");
 
     }
 
