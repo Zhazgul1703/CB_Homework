@@ -1,17 +1,24 @@
 package hw_codingBat;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class Warmup1Test extends BaseTest{
-//    sleepIn(false, false) → true	true	OK
-//    sleepIn(true, false) → false	false	OK
-//    sleepIn(false, true) → true	true	OK
-//    sleepIn(true, true) → true	true	OK
+
     @BeforeAll
     static  void beforAll(){
-        System.out.println("Before all");
+        System.out.println("Before all test");
+    }
+    @BeforeEach
+     void beforeEach(){
+        System.out.println("Before each test");
+    }
+    @AfterAll
+    static  void afterAll(){
+        System.out.println("After all test");
+    }
+    @AfterEach
+    void afterEach(){
+        System.out.println("After each test");
     }
 
     @Test
@@ -20,6 +27,14 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertFalse(false);
         Assertions.assertTrue(true);
         Assertions.assertTrue(true);
+    }
+
+    @Test
+    void monkeyTrouble(){
+        Assertions.assertTrue(true);
+        Assertions.assertTrue(true);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
     }
 
 
