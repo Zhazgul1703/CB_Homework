@@ -22,7 +22,7 @@ public class Warmup1 {
     public int sumDouble(int a, int b) {
         if(a == b){
             return (a + b) * 2;
-        }else{
+        }else {
             return a + b;
         }
     }

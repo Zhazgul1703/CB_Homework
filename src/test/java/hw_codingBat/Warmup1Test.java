@@ -36,13 +36,7 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertFalse(false);
         Assertions.assertFalse(false);
     }
-//
-//    sumDouble(2, 2) → 8	8	OK
-//    sumDouble(-1, 0) → -1	-1	OK
-//    sumDouble(3, 3) → 12	12	OK
-//    sumDouble(0, 0) → 0	0	OK
-//    sumDouble(0, 1) → 1	1	OK
-//    sumDouble(3, 4) → 7	7	OK
+
     @Test
     void sumDouble(){
         Assertions.assertEquals(3,3);
