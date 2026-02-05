@@ -70,4 +70,13 @@ public class Warmup1 {
             return ( (a >= 0 && b < 0) || (a < 0 && b >= 0) );
         }
     }
+
+    public String notString(String str) {
+        if(str.startsWith("not")){
+            return str;
+        }else{
+            String result = "not ".concat(str);
+            return result;
+        }
+    }
 }

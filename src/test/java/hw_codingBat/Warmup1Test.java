@@ -217,5 +217,23 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertTrue(true);
     }
 
+//    notString("candy") → "not candy"	"not candy"	OK
+//    notString("x") → "not x"	"not x"	OK
+//    notString("not bad") → "not bad"	"not bad"	OK
+//    notString("bad") → "not bad"	"not bad"	OK
+//    notString("not") → "not"	"not"	OK
+//    notString("is not") → "not is not"	"not is not"	OK
+//    notString("no") → "not no"	"not no"	OK
+    @Test
+    void  notString(){
+        Assertions.assertEquals("not candy","not candy");
+        Assertions.assertEquals("not x","not x");
+        Assertions.assertEquals("not bad","not bad");
+        Assertions.assertEquals("not bad",warmup1.notString("bad"));
+        Assertions.assertEquals("not","not");
+        Assertions.assertEquals("is not","is not");
+       Assertions.assertEquals("is not", "is not");
+
+    }
 
 }
