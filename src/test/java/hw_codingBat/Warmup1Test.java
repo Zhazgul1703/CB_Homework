@@ -175,6 +175,47 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertFalse(false);
         Assertions.assertFalse(false);
     }
+//    posNeg(1, -1, false) → true	true	OK
+//    posNeg(-1, 1, false) → true	true	OK
+//    posNeg(-4, -5, true) → true	true	OK
+//    posNeg(-4, -5, false) → false	false	OK
+//    posNeg(-4, 5, false) → true	true	OK
+//    posNeg(-4, 5, true) → false	false	OK
+//    posNeg(1, 1, false) → false	false	OK
+//    posNeg(-1, -1, false) → false	false	OK
+//    posNeg(1, -1, true) → false	false	OK
+//    posNeg(-1, 1, true) → false	false	OK
+//    posNeg(1, 1, true) → false	false	OK
+//    posNeg(-1, -1, true) → true	true	OK
+//    posNeg(5, -5, false) → true	true	OK
+//    posNeg(-6, 6, false) → true	true	OK
+//    posNeg(-5, -6, false) → false	false	OK
+//    posNeg(-2, -1, false) → false	false	OK
+//    posNeg(1, 2, false) → false	false	OK
+//    posNeg(-5, 6, true) → false	false	OK
+//    posNeg(-5, -5, true) → true	true	OK
+    @Test
+    void posNeg(){
+        Assertions.assertTrue(true);
+        Assertions.assertTrue(true);
+        Assertions.assertTrue(true);
+        Assertions.assertFalse(false);
+        Assertions.assertTrue(true);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertTrue(true);
+        Assertions.assertTrue(true);
+        Assertions.assertTrue(true);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertFalse(false);
+        Assertions.assertTrue(true);
+    }
 
 
 }
