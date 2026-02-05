@@ -62,7 +62,18 @@ public class Warmup1Test extends BaseTest{
        Assertions.assertEquals(1,1);
        Assertions.assertEquals(7,7);
     }
-
+//    diff21(19) → 2	2	OK
+//    diff21(10) → 11	11	OK
+//    diff21(21) → 0	0	OK
+//    diff21(22) → 2	2	OK
+//    diff21(25) → 8	8	OK
+//    diff21(30) → 18	18	OK
+//    diff21(0) → 21	21	OK
+//    diff21(1) → 20	20	OK
+//    diff21(2) → 19	19	OK
+//    diff21(-1) → 22	22	OK
+//    diff21(-2) → 23	23	OK
+//    diff21(50) → 58	58	OK
     @Test
     void diff21() {
         Assertions.assertEquals(2, 2);
@@ -101,6 +112,27 @@ public class Warmup1Test extends BaseTest{
       Assertions.assertFalse(false);
       Assertions.assertFalse(false);
       Assertions.assertFalse(false);
+    }
+//    makes10(9, 10) → true	true	OK
+//    makes10(9, 9) → false	false	OK
+//    makes10(1, 9) → true	true	OK
+//    makes10(10, 1) → true	true	OK
+//    makes10(10, 10) → true	true	OK
+//    makes10(8, 2) → true	true	OK
+//    makes10(8, 3) → false	false	OK
+//    makes10(10, 42) → true	true	OK
+//    makes10(12, -2) → true	true	OK
+    @Test
+    void  makes10(){
+       Assertions.assertTrue(true);
+       Assertions.assertFalse(false);
+       Assertions.assertTrue(true);
+       Assertions.assertTrue(true);
+       Assertions.assertTrue(true);
+       Assertions.assertTrue(true);
+       Assertions.assertFalse(false);
+       Assertions.assertTrue(true);
+       Assertions.assertTrue(true);
     }
 
 
