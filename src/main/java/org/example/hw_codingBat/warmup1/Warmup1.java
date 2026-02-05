@@ -125,4 +125,12 @@ public class Warmup1 {
         front = f + str + f;
         return front;
     }
+
+    public boolean startHi(String str) {
+        if(str.startsWith("hi")){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

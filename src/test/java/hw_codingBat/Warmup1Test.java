@@ -374,4 +374,24 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertEquals("",warmup1.front22(""));
         Assertions.assertEquals("LoLogicLo",warmup1.front22("Logic"));
    }
+
+//    startHi("hi there") → true	true	OK
+//    startHi("hi") → true	true	OK
+//    startHi("hello hi") → false	false	OK
+//    startHi("he") → false	false	OK
+//    startHi("h") → false	false	OK
+//    startHi("") → false	false	OK
+//    startHi("ho hi") → false	false	OK
+//    startHi("hi ho") → true	true	OK
+    @Test
+    void startHi(){
+        Assertions.assertEquals(true,warmup1.startHi("hi there"));
+        Assertions.assertEquals(true,warmup1.startHi("hi"));
+        Assertions.assertEquals(false,warmup1.startHi("hello hi"));
+        Assertions.assertEquals(false,warmup1.startHi("he"));
+        Assertions.assertEquals(false,warmup1.startHi("h"));
+        Assertions.assertEquals(false,warmup1.startHi(""));
+        Assertions.assertEquals(false,warmup1.startHi("ho hi"));
+        Assertions.assertEquals(true,warmup1.startHi("hi ho"));
+   }
 }
