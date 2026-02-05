@@ -357,6 +357,21 @@ public class Warmup1Test extends BaseTest{
          Assertions.assertEquals(false,warmup1.or35(122));
          Assertions.assertEquals(true,warmup1.or35(123));
    }
-
-
+//    front22("kitten") → "kikittenki"	"kikittenki"	OK
+//    front22("Ha") → "HaHaHa"	"HaHaHa"	OK
+//    front22("abc") → "ababcab"	"ababcab"	OK
+//    front22("ab") → "ababab"	"ababab"	OK
+//    front22("a") → "aaa"	"aaa"	OK
+//    front22("") → ""	""	OK
+//    front22("Logic") → "LoLogicLo"	"LoLogicLo"	OK
+   @Test
+    void  front22(){
+        Assertions.assertEquals("kikittenki",warmup1.front22("kitten"));
+        Assertions.assertEquals("HaHaHa",warmup1.front22("Ha"));
+        Assertions.assertEquals("ababcab",warmup1.front22("abc"));
+        Assertions.assertEquals("ababab",warmup1.front22("ab"));
+        Assertions.assertEquals("aaa",warmup1.front22("a"));
+        Assertions.assertEquals("",warmup1.front22(""));
+        Assertions.assertEquals("LoLogicLo",warmup1.front22("Logic"));
+   }
 }

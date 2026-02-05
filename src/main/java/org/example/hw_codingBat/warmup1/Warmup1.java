@@ -115,4 +115,14 @@ public class Warmup1 {
             return false;
         }
     }
+
+    public String front22(String str) {
+        if(str.length() < 2 ){
+            return str+str+str;
+        }
+        String front;
+        String f = str.substring(0,2);
+        front = f + str + f;
+        return front;
+    }
 }
