@@ -95,4 +95,14 @@ public class Warmup1 {
 
         return last + middle + first;
     }
+
+    public String front3(String str) {
+        String front;
+        if(str.length() <= 3){
+            front = str;
+        }else{
+            front = str.substring(0,3);
+        }
+        return front.concat(front).concat(front);
+    }
 }
