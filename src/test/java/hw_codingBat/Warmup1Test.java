@@ -295,6 +295,68 @@ public class Warmup1Test extends BaseTest{
         Assertions.assertEquals("",warmup1.front3(""));
     }
 
+//    backAround("cat") → "tcatt"	"tcatt"	OK
+//    backAround("Hello") → "oHelloo"	"oHelloo"	OK
+//    backAround("a") → "aaa"	"aaa"	OK
+//    backAround("abc") → "cabcc"	"cabcc"	OK
+//    backAround("read") → "dreadd"	"dreadd"	OK
+//    backAround("boo") → "obooo"	"obooo"	OK
+    @Test
+    void  backAround(){
+       Assertions.assertEquals("tcatt",warmup1.backAround("cat"));
+       Assertions.assertEquals("oHelloo",warmup1.backAround("Hello"));
+       Assertions.assertEquals("aaa",warmup1.backAround("a"));
+       Assertions.assertEquals("cabcc",warmup1.backAround("abc"));
+       Assertions.assertEquals("dreadd",warmup1.backAround("read"));
+       Assertions.assertEquals("obooo",warmup1.backAround("boo"));
+   }
+//    or35(3) → true	true	OK
+//    or35(10) → true	true	OK
+//    or35(8) → false	false	OK
+//    or35(15) → true	true	OK
+//    or35(5) → true	true	OK
+//    or35(9) → true	true	OK
+//    or35(4) → false	false	OK
+//    or35(7) → false	false	OK
+//    or35(6) → true	true	OK
+//    or35(17) → false	false	OK
+//    or35(18) → true	true	OK
+//    or35(29) → false	false	OK
+//    or35(20) → true	true	OK
+//    or35(21) → true	true	OK
+//    or35(22) → false	false	OK
+//    or35(45) → true	true	OK
+//    or35(99) → true	true	OK
+//    or35(100) → true	true	OK
+//    or35(101) → false	false	OK
+//    or35(121) → false	false	OK
+//    or35(122) → false	false	OK
+//    or35(123) → true	true	OK
+    @Test
+    void  or35(){
+         Assertions.assertEquals(true,warmup1.or35(3));
+         Assertions.assertEquals(true,warmup1.or35(10));
+         Assertions.assertEquals(false,warmup1.or35(8));
+         Assertions.assertEquals(true,warmup1.or35(15));
+         Assertions.assertEquals(true,warmup1.or35(5));
+         Assertions.assertEquals(true,warmup1.or35(9));
+         Assertions.assertEquals(false,warmup1.or35(4));
+         Assertions.assertEquals(false,warmup1.or35(7));
+         Assertions.assertEquals(true,warmup1.or35(6));
+         Assertions.assertEquals(false,warmup1.or35(17));
+         Assertions.assertEquals(true,warmup1.or35(18));
+         Assertions.assertEquals(false,warmup1.or35(29));
+         Assertions.assertEquals(true,warmup1.or35(20));
+         Assertions.assertEquals(true,warmup1.or35(21));
+         Assertions.assertEquals(false,warmup1.or35(22));
+         Assertions.assertEquals(true,warmup1.or35(45));
+         Assertions.assertEquals(true,warmup1.or35(99));
+         Assertions.assertEquals(true,warmup1.or35(100));
+         Assertions.assertEquals(false,warmup1.or35(101));
+         Assertions.assertEquals(false,warmup1.or35(121));
+         Assertions.assertEquals(false,warmup1.or35(122));
+         Assertions.assertEquals(true,warmup1.or35(123));
+   }
 
 
 }

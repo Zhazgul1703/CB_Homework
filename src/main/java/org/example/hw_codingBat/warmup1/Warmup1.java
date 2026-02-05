@@ -101,4 +101,18 @@ public class Warmup1 {
         }
         return front.concat(front).concat(front);
     }
+    public String backAround(String str) {
+        String backAround;
+        String a = str.substring(str.length()-1);
+        backAround =  a +  str + a;
+        return backAround;
+    }
+
+    public boolean or35(int n) {
+        if( n % 3 == 0 || n % 5 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
